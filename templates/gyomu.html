@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gyomu</title>
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    crossorigin="anonymous">
+</head>
+<body class="container">
+    <h1 class="display-4 mb-4">{{.Message}}</h1>
+    <form action="/gyomu" method="post">
+        <div class="form-group">
+            <label for="data">日付</label>
+            <input type="text" class="form-control" id="date" name="date">
+            <label for="name">顧客名</label>
+            <input type="text" class="form-control" id="name" name="name">
+            <label for="number">生産枚数</label>
+            <input type="text" class="form-control" id="number" name="number">
+        </div>
+        <button type="submit" class="btn btn-primary">
+            Click</button>
+    </form>
+
+    
+</body>
+</html>
